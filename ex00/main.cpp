@@ -3,7 +3,7 @@
 int main(void){
 	std::string name;
 
-    std::cout << "\nTesting Zombie.cpp (stack)\n";
+    std::cout << "Testing Zombie.cpp (stack)\n";
     std::cout << "Zombie name:\t";
     std::cin >> name;
 

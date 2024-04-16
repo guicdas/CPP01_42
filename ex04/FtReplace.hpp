@@ -8,10 +8,12 @@ class FtReplace{
 	private:
 		std::string infile;
 		std::string outfile;
+		std::string oldString;
+		std::string newString;
 	public:
-		std::ifstream ifs;
-		FtReplace(std::string filename);
+		FtReplace(char **av);
 		~FtReplace(void);
-		void	replace(std::string oldString, std::string newString);
-		int		validFile(void);
+
+		void	replace(void);
+		int		validEntry(void);
 };

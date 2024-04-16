@@ -5,6 +5,7 @@
 
 class Harl{
 	private:
+		void (Harl::*instance[4])(void);
 		void debug( void );
 		void info( void );
 		void warning( void );
@@ -12,7 +13,6 @@ class Harl{
 	public:
 		Harl();
 		~Harl();
-		void complain( std::string level );
-};
 
-typedef void (Harl::*instance) ( void );
+		void	complain( std::string level );
+};
